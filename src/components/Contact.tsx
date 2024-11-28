@@ -54,10 +54,10 @@ export default function Contact() {
         <div className="text-center mb-12">
           <Mail className="h-12 w-12 text-purple-500 mx-auto mb-4" />
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Get In Touch
+            Haben Sie Fragen?
           </h2>
           <p className="text-gray-400">
-            Have a project in mind? Let's create something amazing together.
+            Schreiben Sie mir eine E-Mail und ich werde Ihnen schnellstmöglich antworten.
           </p>
         </div>
         
@@ -74,7 +74,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 className="w-full px-4 py-3 bg-gray-900/50 border border-gray-800 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-white"
-                placeholder="John Doe"
+                placeholder="John Pork"
               />
             </div>
             <div>
@@ -95,7 +95,7 @@ export default function Contact() {
           
           <div>
             <label htmlFor="message" className="block text-sm font-medium text-gray-400 mb-2">
-              Message
+              Nachricht
             </label>
             <div className="relative">
               <MessageSquare className="absolute top-3 left-3 h-5 w-5 text-gray-500" />
@@ -106,7 +106,7 @@ export default function Contact() {
                 required
                 rows={4}
                 className="w-full pl-12 pr-4 py-3 bg-gray-900/50 border border-gray-800 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-white"
-                placeholder="Your message here..."
+                placeholder="Ihre Nachricht..."
               />
             </div>
           </div>
@@ -126,17 +126,17 @@ export default function Contact() {
               'Failed to Send'
             ) : (
               <>
-                Send Message
+                E-Mail senden
                 <Send className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </>
             )}
           </button>
 
           {status === 'success' && (
-            <p className="text-green-500 text-center">Thank you for your message! We'll get back to you soon.</p>
+            <p className="text-green-500 text-center">Danke für Ihre E-Mail.</p>
           )}
           {status === 'error' && (
-            <p className="text-red-500 text-center">Something went wrong. Please try again later.</p>
+            <p className="text-red-500 text-center">Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.</p>
           )}
         </form>
       </div>

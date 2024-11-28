@@ -7,7 +7,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-            About Me
+            Über mich
           </h2>
           <p className="text-gray-300 mb-8 text-lg leading-relaxed">
             Ich bin ein IMS Schüler der Kantonsschule Baden und der Berfusfachschule Baden. 
@@ -19,7 +19,7 @@ export default function About() {
           <div className="space-y-4">
             <div className="flex items-center space-x-4 text-gray-300">
               <MapPin className="h-5 w-5 text-purple-400" />
-              <span>Based in Baden, Aargau</span>
+              <span>Baden, Aargau</span>
             </div>
             <div className="flex items-center space-x-4 text-gray-300">
               <Briefcase className="h-5 w-5 text-purple-400" />
@@ -27,22 +27,22 @@ export default function About() {
             </div>
             <div className="flex items-center space-x-4 text-gray-300">
               <Heart className="h-5 w-5 text-purple-400" />
-              <span>Passionate about UI/UX and Simracing</span>
+              <span> UI/UX und Simracing</span>
             </div>
           </div>
 
           <div className="mt-12 grid grid-cols-3 gap-4">
             <div className="text-center">
-              <div className="text-3xl font-bold text-purple-400 mb-2">5+</div>
-              <div className="text-sm text-gray-400">Years of Experience</div>
+              <div className="text-3xl font-bold text-purple-400 mb-2"></div>
+              <div className="text-sm text-gray-400"></div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-purple-400 mb-2">50+</div>
-              <div className="text-sm text-gray-400">Projects Completed</div>
+              <div className="text-3xl font-bold text-purple-400 mb-2"></div>
+              <div className="text-sm text-gray-400"></div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-purple-400 mb-2">20+</div>
-              <div className="text-sm text-gray-400">Happy Clients</div>
+              <div className="text-3xl font-bold text-purple-400 mb-2"></div>
+              <div className="text-sm text-gray-400"></div>
             </div>
           </div>
         </div>

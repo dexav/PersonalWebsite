@@ -1,26 +1,26 @@
-import React from 'react';
+
 import { Code2, Database, Layout, Smartphone } from 'lucide-react';
 
 const skills = [
   {
     category: "Frontend",
     icon: <Layout className="h-6 w-6" />,
-    items: ["React", "TypeScript", "Tailwind CSS", "Next.js"]
+    items: ["HTML", "CSS", "React", "JavaScript"]
   },
   {
     category: "Backend",
     icon: <Database className="h-6 w-6" />,
-    items: ["Node.js", "Python", "PostgreSQL", "MongoDB"]
+    items: ["Node.js", "MySQL", "MongoDB"]
   },
   {
     category: "Mobile",
     icon: <Smartphone className="h-6 w-6" />,
-    items: ["React Native", "Flutter", "iOS", "Android"]
+    items: ["React Native", "Android", "Maui C#"]
   },
   {
     category: "Other",
     icon: <Code2 className="h-6 w-6" />,
-    items: ["Git", "Docker", "AWS", "CI/CD"]
+    items: ["Git", "Docker", ]
   }
 ];
 
@@ -29,7 +29,7 @@ export default function Skills() {
     <section id="skills" className="py-20 bg-gradient-custom">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-12 text-center">
-          Skills & Expertise
+          Skills
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skills.map((skill, index) => (

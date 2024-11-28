@@ -1,5 +1,5 @@
-import React from 'react';
-import { ArrowRight, Code, Sparkles } from 'lucide-react';
+import React from 'react';  
+import { ArrowRight, Code } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -10,19 +10,28 @@ export default function Hero() {
           <Code className="h-20 w-20 mx-auto text-purple-300 mb-8" />
         </div>
         <h1 className="text-4xl sm:text-6xl font-bold text-white mb-6">
-          Creative Developer
-          <Sparkles className="inline-block ml-4 h-8 w-8 text-yellow-300" />
+          Xavier Nursiwat      
         </h1>
         <p className="text-xl sm:text-2xl text-purple-200 mb-12 max-w-2xl mx-auto">
-          Crafting beautiful and functional web experiences with passion and precision
+          IMS-Schüler im 3.Lehrjahr, Kantonsschule Baden und Berufsfachschule Baden
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="group bg-white text-purple-900 px-8 py-3 rounded-full font-semibold btn-hover inline-flex items-center justify-center">
-            View Projects
+          <button 
+            onClick={() => {
+              document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="group bg-white text-purple-900 px-8 py-3 rounded-full font-semibold btn-hover inline-flex items-center justify-center"
+          >
+            Projekte anschauen
             <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
           </button>
-          <button className="group bg-purple-700/30 text-white border-2 border-purple-500 px-8 py-3 rounded-full font-semibold btn-hover inline-flex items-center justify-center">
-            Contact Me
+          <button 
+            onClick={() => {
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="group bg-purple-700/30 text-white border-2 border-purple-500 px-8 py-3 rounded-full font-semibold btn-hover inline-flex items-center justify-center"
+          >
+            Kontakt
           </button>
         </div>
       </div>

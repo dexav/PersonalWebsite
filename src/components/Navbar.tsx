@@ -27,13 +27,13 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
-            <a href="https://github.com" className="text-gray-300 hover:text-white btn-hover">
+            <a href="https://github.com/dexav" className="text-gray-300 hover:text-white btn-hover">
               <Github className="h-5 w-5" />
             </a>
-            <a href="https://linkedin.com" className="text-gray-300 hover:text-white btn-hover">
+            <a href="https://www.linkedin.com/in/xavier-nursiwat/" className="text-gray-300 hover:text-white btn-hover">
               <Linkedin className="h-5 w-5" />
             </a>
-            <a href="mailto:contact@example.com" className="text-gray-300 hover:text-white btn-hover">
+            <a href="mailto:xnursiwat@gmail.com" className="text-gray-300 hover:text-white btn-hover">
               <Mail className="h-5 w-5" />
             </a>
           </div>

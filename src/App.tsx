@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -20,7 +20,7 @@ function App() {
         <Contact />
       </main>
       <footer className="bg-black py-8 text-center text-gray-400">
-        <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Xavier Nursiwat.</p>
       </footer>
     </div>
   );
