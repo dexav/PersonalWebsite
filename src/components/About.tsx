@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Briefcase, Heart, MapPin } from 'lucide-react';
 
 export default function About() {
