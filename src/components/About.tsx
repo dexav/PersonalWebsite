@@ -13,7 +13,7 @@ export default function About() {
             Ich bin ein IMS Schüler der Kantonsschule Baden und der Berfusfachschule Baden. 
             Ich bin zurzeit im 3.Jahr der IMS und habe mittlerweile an vielen Projekten gearbeitet. 
             Neben dem Programmieren bin ich ein leidenschaftlicher Simracer, der seit ca. einem Jahr 
-            die Spiele F1 und Forza Motorsport am meisten spielt.
+            die Spiele F1 und Forza Motorsport am meisten spielt. 
           </p>
 
           <div className="space-y-4">

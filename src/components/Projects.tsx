@@ -7,7 +7,7 @@ const projects = [
     image: "https://i0.wp.com/northforker.com/files/2023/09/DSC_8083.jpg?fit=1200%2C798&ssl=1",
     tech: ["JavaScript", "HTML", "CSS"],
     github: "https://github.com/dexav/Sense_Arcade",
-    live: "https://dexav.github.io/Sense_Arcade/"
+    live: "https://portfolio.bbbaden.ch/view/view.php?t=75a0d24c98044af25531"
   },
   {
     title: "Jump Up",
@@ -15,7 +15,7 @@ const projects = [
     image: "https://i.pinimg.com/1200x/04/df/4f/04df4ffeb725a217cc3ffc30999bc9a3.jpg",
     tech: ["C#", "Unity"],
     github: "https://github.com/dexav/JumpUp_1305",
-    live: "https://portfolio.bbbaden.ch/user/x-nursiwat-inf22/jumpup-unity-game"
+    live: "https://portfolio.bbbaden.ch/view/view.php?t=f95c10fbdb3cbce1f9a3"
   },
   {
     title: "Morsecode Translator",
@@ -23,7 +23,7 @@ const projects = [
     image: "https://www.schule.at/fileadmin/_processed_/e/8/csm_MorseCodeGenerator_Vorschaubild_926e0686f7.png",
     tech: ["Python"],
     github: "https://github.com/dexav/ILA_1303/blob/main/Projektdokumentation.md",
-    live: "https://portfolio.bbbaden.ch/user/x-nursiwat-inf22/morsecode-ubersetzer-mit-python"
+    live: "https://portfolio.bbbaden.ch/view/view.php?t=ddb829c14e257f5affa4"
   }
 ];
 
