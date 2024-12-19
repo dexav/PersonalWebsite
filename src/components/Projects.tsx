@@ -7,7 +7,7 @@ const projects = [
     image: "https://i0.wp.com/northforker.com/files/2023/09/DSC_8083.jpg?fit=1200%2C798&ssl=1",
     tech: ["JavaScript", "HTML", "CSS"],
     github: "https://github.com/dexav/Sense_Arcade",
-    live: "https://portfolio.bbbaden.ch/view/view.php?t=75a0d24c98044af25531"
+    live: "https://dexav.github.io/Sense_Arcade/"
   },
   {
     title: "Jump Up",
