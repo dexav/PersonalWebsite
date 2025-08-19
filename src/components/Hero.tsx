@@ -13,7 +13,7 @@ export default function Hero() {
           Xavier Nursiwat      
         </h1>
         <p className="text-xl sm:text-2xl text-purple-200 mb-12 max-w-2xl mx-auto">
-          IMS-Schüler im 3.Lehrjahr, Kantonsschule Baden und Berufsfachschule Baden
+          IMS-Schüler im 4.Lehrjahr (Zwischenjahr), Kantonsschule Baden und Berufsfachschule Baden
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button 

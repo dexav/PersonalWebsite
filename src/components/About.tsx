@@ -11,9 +11,9 @@ export default function About() {
           </h2>
           <p className="text-gray-300 mb-8 text-lg leading-relaxed">
             Ich bin ein IMS Schüler der Kantonsschule Baden und der Berfusfachschule Baden. 
-            Ich bin zurzeit im 3.Jahr der IMS und habe mittlerweile an vielen Projekten gearbeitet. 
+            Ich bin zurzeit im 4.Jahr bzw. in einem Zwischenjahr der IMS und habe mittlerweile an vielen Projekten gearbeitet. 
             Neben dem Programmieren bin ich ein leidenschaftlicher Simracer, der seit ca. einem Jahr 
-            die Spiele F1 und Forza Motorsport am meisten spielt. 
+            die Spiele F1 und Assetto Corsa am meisten spielt. Dazu mache ich Sport; Gehe joggen und spiele Badminton. 
           </p>
 
           <div className="space-y-4">
@@ -27,7 +27,7 @@ export default function About() {
             </div>
             <div className="flex items-center space-x-4 text-gray-300">
               <Heart className="h-5 w-5 text-purple-400" />
-              <span> UI/UX und Simracing</span>
+              <span> UI/UX, Webapp und Simracing</span>
             </div>
           </div>
 

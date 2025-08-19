@@ -1,4 +1,8 @@
 import { Award, Download } from 'lucide-react';
+// @ts-ignore
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const certificates = [
   {
@@ -16,11 +20,18 @@ const certificates = [
     downloadUrl: "/PersonalWebsite/certificates/wirtschaftswoche.pdf"
   },
   {
-    title: "Zeugnisse",
+    title: "Zeugnisse + Berufsmaturität",
     institution: "Kantonsschule Baden & Berufsfachschule Baden",
-    date: "2022-2024",
+    date: "2022-2025",
     image: "https://img.chmedia.ch/2024/07/26/6a15aaea-e515-4bf5-8150-96c7d1b71eaa.jpeg?width=1360&height=907&fit=bounds&quality=75&auto=webp&crop=5000,3333,x0,y0",
     downloadUrl: "/PersonalWebsite/certificates/zeugnisse.pdf"
+  },
+  {
+    title: "Cambridge C1 Certificate",
+    institution: "Cambridge English",
+    date: "März 2025",
+    image: "https://images.squarespace-cdn.com/content/v1/5b57b5174cde7a6b7993cf09/006a8bf5-edc2-48bc-8ef9-7b431e5d4452/Cambridge+English+Test",
+    downloadUrl: "/PersonalWebsite/certificates/C1_Zertifikat.pdf"
   }
 ];
 
@@ -38,38 +49,68 @@ export default function Certificates() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {certificates.map((cert, index) => (
-            <div key={index} className="bg-purple-900/20 rounded-lg overflow-hidden border border-purple-500/20">
-              <div className="relative h-48">
-                <img
-                  src={cert.image}
-                  alt={cert.title}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-white mb-2">{cert.title}</h3>
-                <p className="text-purple-200 mb-4">{cert.institution}</p>
-                <div className="flex items-center justify-between text-sm text-gray-300 mb-4">
-                  <span>{cert.date}</span>
+        <div className="max-w-5xl mx-auto">
+          <Slider
+            dots={true}
+            infinite={true}
+            speed={500}
+            slidesToShow={3}
+            slidesToScroll={1}
+            autoplay={true}
+            autoplaySpeed={5000}
+            pauseOnHover={true}
+            responsive={[
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                }
+              },
+              {
+                breakpoint: 640,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]}
+            className="certificate-slider"
+          >
+            {certificates.map((cert, index) => (
+              <div key={index} className="px-2">
+                <div className="bg-purple-900/20 rounded-lg overflow-hidden border border-purple-500/20 h-full">
+                  <div className="relative h-48">
+                    <img
+                      src={cert.image}
+                      alt={cert.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold text-white mb-2">{cert.title}</h3>
+                    <p className="text-purple-200 mb-4">{cert.institution}</p>
+                    <div className="flex items-center justify-between text-sm text-gray-300 mb-4">
+                      <span>{cert.date}</span>
+                    </div>
+                    {cert.downloadUrl && (
+                      <a
+                        href={cert.downloadUrl}
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        type="application/pdf"
+                        className="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors"
+                      >
+                        <Download className="h-4 w-4 mr-2" />
+                        PDF herunterladen
+                      </a>
+                    )}
+                  </div>
                 </div>
-                {cert.downloadUrl && (
-                  <a
-                    href={cert.downloadUrl}
-                    download
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    type="application/pdf"
-                    className="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors"
-                  >
-                    <Download className="h-4 w-4 mr-2" />
-                    PDF herunterladen
-                  </a>
-                )}
               </div>
-            </div>
-          ))}
+            ))}
+          </Slider>
         </div>
       </div>
     </section>

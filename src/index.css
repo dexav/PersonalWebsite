@@ -2,6 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom styles for certificate slider */
+.certificate-slider .slick-prev,
+.certificate-slider .slick-next {
+  z-index: 10;
+}
+
+.certificate-slider .slick-prev {
+  left: -25px;
+}
+
+.certificate-slider .slick-next {
+  right: -25px;
+}
+
+.certificate-slider .slick-prev:before,
+.certificate-slider .slick-next:before {
+  color: #a855f7;
+}
+
+.certificate-slider .slick-dots li button:before {
+  color: #a855f7;
+}
+
+.certificate-slider .slick-dots li.slick-active button:before {
+  color: #a855f7;
+}
+
+.certificate-slider .slick-track {
+  display: flex;
+  gap: 1rem;
+}
+
+.certificate-slider .slick-slide {
+  height: inherit;
+  margin: 0 0.5rem;
+}
+
 @layer utilities {
   .bg-gradient-custom {
     @apply bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800;

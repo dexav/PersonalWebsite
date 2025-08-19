@@ -20,7 +20,7 @@ const skills = [
   {
     category: "Other",
     icon: <Code2 className="h-6 w-6" />,
-    items: ["Git", "Docker", ]
+    items: ["GitHub","Git", "Docker", "WPF" ]
   }
 ];
 
